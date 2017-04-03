@@ -163,6 +163,83 @@ color: white;
 }
 
 
+/* SECTION-TIMELINE */
+
+.section-timeline {
+    background-color: white;
+    padding: 5rem;
+}
+
+.timeline {
+    list-style: none;
+    padding: 20px 0 80px;
+    padding-top:50px;
+    position: relative;
+}
+
+.timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content:" ";
+    width: 3px;
+    background-color: #eeeeee;
+    left: 50%;
+    margin-left: -1.5px;
+}
+
+.timeline > li {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+    content: "";
+    display: table;
+    
+}
+
+.timeline > li: after {
+    clear: both;
+}
+
+.timeline > li > .timeline-panel {
+    width: 50%;
+    border: 1px solid #d4d4d4;
+    border-radius: 2px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.175);
+}
+
+.timeline p {
+    font-family: 'Nunito-Regular';
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-height: 865px) {
     .wall-sticker {
@@ -170,3 +247,44 @@ color: white;
         padding: 7rem 20rem 2rem 3rem !important;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
