@@ -54,6 +54,7 @@ body {
     border-radius: 5px;
     border: 1px solid rgba(19, 128, 26, 1);
     font-family: 'Nunito-Regular';
+    vertical-align: middle;
     /*    transition: 0.3s;*/
 }
 
@@ -64,7 +65,7 @@ body {
 .btn-outline-success:focus,
 .btn-outline-success:active {
     background-color: rgba(19, 128, 36, 0.6);
-    border: 2px solid rgba(19, 128, 26, 0);
+    border: 1px solid rgba(19, 128, 26, 0);
     /*    transition: 0.3s;*/
 }
 
@@ -79,6 +80,11 @@ body {
 .fa-arrow-down:hover {
     color: rgba(19, 128, 36, 0.6);
     transition: 0.3s;
+}
+
+.parallax-btn {
+    width: 200px;
+    margin: 30px auto 0 auto;
 }
 
 
@@ -191,13 +197,14 @@ color: white;
 .timeline > li {
     margin-bottom: 20px;
     position: relative;
+    height: 300px
 }
 
 .timeline > li:before,
 .timeline > li:after {
     content: "";
     display: table;
-    
+
 }
 
 .timeline > li: after {
@@ -218,28 +225,178 @@ color: white;
     font-weight: 700;
 }
 
+.timeline > li:not(.timeline-inverted) {
+    padding-right: 90px;   
+}
+
+.timeline > li.timeline-inverted {
+    padding-left: 90px;
+}
+
+.timeline > li > .timeline-badge {
+    font-size: 1rem; !important
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: rgba(19, 128, 36, 0.82);
+    border-radius: 50%
+}
+
+.timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+}
 
 
+/* SECTION PARALLAX */
+
+#section-parallax {
+    text-align: center;
+    background: url(../img/trees.jpg) center repeat fixed;
+    padding: 140px 0;
+    background-size: cover;
+    color: white;
+}
+
+/* SECTION CARDS */
+
+#section-cards {
+    padding: 5rem 0;
+}
+
+.card {
+    margin-top: 3rem;
+}
+
+.card a {
+    color: rgba(19, 128, 36, 0.9);
+}
+.card a:hover {
+    color: rgb(19, 128, 36);
+}
+
+.card img {
+    transition: 1s;
+}
+
+.card img:hover {
+    transform: scale(0.98);
+    transition: 1s;
+}
+
+.card-block {
+
+}
+
+.card-subtitle {
+
+}
+
+/* NUMBERS */
+
+#section-numbers {
+    text-align: center;
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.num-content {
+    display: table;
+    font-size: 20px;
+    line-height: 20px;
+    height: 140px;
+    width: 140px;
+    background: rgba(19, 128, 36, 0.9);
+    border-radius: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    transition: 0.3s;
+}
+
+.num-content:hover {
+    color: #222;
+    transition: 0.3s;
+}
 
 
+.num {
+    padding: 5rem 0;
+    margin-left: 20%;
+}
+
+.num p {
+    padding-top: 15px;
+}
 
 
+/* TESTIMONIALS */
+
+.section-testimonials {
+    padding: 5rem 0;
+}
+
+.testimonial {
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.monka-img,
+.mario-img,
+.monice-img {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.monka-img:hover,
+.mario-img:hover,
+.monice-img:hover {
+    transition: 0.5s;
+    transform: scale(0.95);
+}
 
 
+blockquote {
+    font-family: 'Nunito-Regular';
+}
 
+.testimonials-hr {
+    border-top: 1px solid rgba(19, 128, 36, 1);
+    width: 100%;
+    background-color: 1px solid rgba(19, 128, 36, 1);
+}
 
+/* CONTACT */
 
+.section-contact {
+    background: white;
+    padding: 10rem 0;
+}
 
+#contact .col-form-label {
+    font-size: 18px;
+    line-height: 80%;
+}
 
+.form-control {
+    font-size 16px;
+}
 
+.form-horizontal {
+    padding: 5rem 0;
+}
 
-
-
-
-
-
-
-
+textarea:focus,
+input:focus {
+    border-color: red; !important;
+}
 
 @media only screen and (max-height: 865px) {
     .wall-sticker {
