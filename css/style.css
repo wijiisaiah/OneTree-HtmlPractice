@@ -207,7 +207,7 @@ color: white;
 
 }
 
-.timeline > li: after {
+.timeline > li:after {
     clear: both;
 }
 
@@ -370,7 +370,7 @@ blockquote {
 .testimonials-hr {
     border-top: 1px solid rgba(19, 128, 36, 1);
     width: 100%;
-    background-color: 1px solid rgba(19, 128, 36, 1);
+    background-color: rgba(19, 128, 36, 1);
 }
 
 /* CONTACT */
@@ -386,7 +386,7 @@ blockquote {
 }
 
 .form-control {
-    font-size 16px;
+    font-size: 16px;
     font-family: 'Cubano-Regular';
 }
 
@@ -520,7 +520,7 @@ footer p {
         position: absolute;
         right: 135px;
     }
-    
+
     .fa-facebook-square,
     .fa-twitter-square,
     .fa-google-plus-square,
@@ -536,11 +536,11 @@ footer p {
         width: 85px;
         height: 85px;
     }
-    
+
     .testimonials-hr {
         width: 130px;
     }
-    
+
 }
 
 @media only screen and (max-width: 770px) {
@@ -548,19 +548,46 @@ footer p {
         display: none;
     }
 
-    .fa-facebook-square,
-    .fa-twitter-square,
-    .fa-google-plus-square,
-    .fa-instagram {
-        font-size: 20px;
+    .social-links li {
+        display: inline-block;
+        margin-right: 10px;
+        margin-top: 10px;
+        padding-right: 15px;
     }
-    
+
+    .fa-instagram{
+        margin-right: 10px;
+    }
+
+    .testimonial {
+        display: inline-table;
+        font-size: 12px;
+    }
+
+    .timeline > li.timeline-inverted > .timeline-panel {
+        float: none;
+    }
+
+    .timeline > li.timeline-inverted {
+        padding-left: 0;
+        padding-right: 90px;   
+    }
+
+    .timeline > li > .timeline-panel {
+        float: none;
+        width: 140%;
+        margin-top: 5rem;
+        font-size: 12px;
+        
+    }
+
+
 }
 
 
 
 
- 
+
 
 
 

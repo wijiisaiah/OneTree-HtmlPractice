@@ -12,6 +12,7 @@ $(document).ready(function () {
 
         var h = window.innerHeight;
 
+        console.log(h);
         if ($(window).scrollTop() > h) {
             $('.navbar').addClass('fixed-top');
         }
@@ -24,11 +25,12 @@ $(document).ready(function () {
     });
     
     $('a[href^="#"]').bind('click.smoothscroll',function (e) {
+
             e.preventDefault();
             var target = this.hash;
-            $target = $(target);
+            target = $(target);
             $('html, body').stop().animate({
-                'scrollTop': $target.offset().top
+                'scrollTop': target.offset().top
             }, 700, 'swing', function () {
                 window.location.hash = target;
             });
