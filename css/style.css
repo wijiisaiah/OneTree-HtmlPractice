@@ -255,7 +255,7 @@ color: white;
 
 /* SECTION PARALLAX */
 
-#section-parallax {
+#parallax {
     text-align: center;
     background: url(../img/trees.jpg) center repeat fixed;
     padding: 140px 0;
@@ -265,7 +265,7 @@ color: white;
 
 /* SECTION CARDS */
 
-#section-cards {
+#products {
     padding: 5rem 0;
 }
 
@@ -299,7 +299,7 @@ color: white;
 
 /* NUMBERS */
 
-#section-numbers {
+#numbers {
     text-align: center;
     padding: 5rem 0;
     background-color: white;
@@ -387,26 +387,180 @@ blockquote {
 
 .form-control {
     font-size 16px;
+    font-family: 'Cubano-Regular';
 }
 
 .form-horizontal {
     padding: 5rem 0;
 }
 
-textarea:focus,
-input:focus {
-    border-color: red; !important;
+textarea:focus, input:focus {
+    border-color: red !important;
 }
+
+#contact .btn.btn-success {
+    font-family: 'Cubano-Regular';
+    background-color: rgba(19, 128, 36, 1);
+    border: 1px solid rgba(19, 128, 36, 1);
+    border-radius: 5px;
+    margin: 50px 5rem 0 0;
+    transition: 0.5s;
+}
+
+#contact .btn.btn-success:hover {
+    background-color: rgba(19, 128, 36, 0.9);
+    border: 1px solid rgba(19, 128, 36, 1);
+    transition: 0.5s;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #222;
+    padding-bottom: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 35px;
+}
+
+
+
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    font-size: 160%;
+    transition: 0.3s;
+}
+
+
+.fa-facebook-square:hover {
+    color: #3b5998;
+}
+
+.fa-twitter-square:hover {
+    color: #00aced;
+}
+
+.fa-google-plus-square:hover {
+    color: #dd4b39;
+}
+
+.fa-instagram:hover {
+    color: #517fa4;
+}
+
+.fa-facebook-square,
+.fa-twitter-square,
+.fa-google-plus-square,
+.fa-instagram {
+    transition: 0.3s;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 45px;
+    font-size: 18px;
+}
+
+.fa-chevron-circle-up {
+    margin-top: 35px;
+    color: rgb(14, 96, 27);
+    transition: 0.2s;
+}
+
+.fa-chevron-circle-up:hover {
+    margin-top: 35px;
+    color: rgba(14, 96, 27, 0.92);
+    transition: 0.2s;
+}
+
+/* ANIMATIONS */
+
+.js-wp-1 {
+    opacity: 0;
+}
+
+.js-wp-1.animated {
+    opacity: 1;
+}
+
 
 @media only screen and (max-height: 865px) {
     .wall-sticker {
         font-size: 5rem;
-        padding: 7rem 20rem 2rem 3rem !important;
+        padding: 50% 20rem 100% 20% !important;
     }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .moto {
+        font-size: 2rem;
+        margin-left: 15rem; 
+    }
+    .fa-arrow-down {
+        position: absolute;
+        right: 135px;
+    }
+    
+    .fa-facebook-square,
+    .fa-twitter-square,
+    .fa-google-plus-square,
+    .fa-instagram {
+        font-size: 43px;
+    }
+    .navbar {
+        font-size: 13px;
+    }
+    .monka-img,
+    .mario-img,
+    .monice-img {
+        width: 85px;
+        height: 85px;
+    }
+    
+    .testimonials-hr {
+        width: 130px;
+    }
+    
+}
+
+@media only screen and (max-width: 770px) {
+    .moto {
+        display: none;
+    }
+
+    .fa-facebook-square,
+    .fa-twitter-square,
+    .fa-google-plus-square,
+    .fa-instagram {
+        font-size: 20px;
+    }
+    
 }
 
 
 
+
+ 
 
 
 
